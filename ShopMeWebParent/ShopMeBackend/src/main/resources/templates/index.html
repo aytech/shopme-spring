@@ -1,10 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>ShopMe admin control panel</title>
+    <title>Home - ShopMe admin</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
 </head>
 <body>
-    <h1>Welcome to ShopMe admin control panel!</h1>
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-md bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" th:href="@{/}">
+                <img th:src="@{/images/logo_small.png}">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop"
+                    aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color:#fff"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTop">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" th:href="@{/users}" style="color:#fff">
+                            Users
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/categories}" style="color:#fff">
+                            Categories
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/brands}" style="color:#fff">Brands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/products}" style="color:#fff">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/customers}" style="color:#fff">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/shipping}" style="color:#fff">Shipping</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/orders}" style="color:#fff">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/report}" style="color:#fff">Sales Report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/articles}" style="color:#fff">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/menus}" style="color:#fff">Menus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/settings}" style="color:#fff">Settings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <h1>Welcome to ShopMe admin control panel!</h1>
+    </div>
+
+    <div>
+        <p>ShopMe control panel - Copyright &copy; ShopMe</p>
+    </div>
+</div>
 </body>
 </html>

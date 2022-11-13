@@ -1,4 +1,4 @@
-package com.shopme.site.admin;
+package com.shopme.admin;
 
 public class Main {
     public static void main(String[] args) {
